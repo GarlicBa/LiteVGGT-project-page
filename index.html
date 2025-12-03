@@ -243,59 +243,59 @@
             <!-- TODO: Replace with your paper title -->
             <h1 class="title is-1 publication-title">LiteVGGT: Boosting Vanilla VGGT via Geometry-aware Cached Token Merging</h1>
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
+            
               <span class="author-block">
-                <a href="Zhijian Shu" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                    <span class="author-block">
-                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Fouth Author</a>
-                  </span>
-                  </div>
+                <a href="#" target="_blank">Zhijian Shu</a><sup>*</sup>,
+              </span>
+            
+              <span class="author-block">
+                <a href="#" target="_blank">Cheng Lin</a>,
+              </span>
+            
+              <span class="author-block">
+                <a href="#" target="_blank">Tao Xie</a>,
+              </span>
+            
+              <span class="author-block">
+                <a href="#" target="_blank">Wei Yin</a>,
+              </span>
+            
+              <span class="author-block">
+                <a href="#" target="_blank">Ben Li</a>,
+              </span>
+            
+              <span class="author-block">
+                <a href="#" target="_blank">Zhiyuan Pu</a>,
+              </span>
+            
+              <span class="author-block">
+                <a href="#" target="_blank">Yao Yao</a>,
+              </span>
+            
+              <span class="author-block">
+                <a href="#" target="_blank">Xun Cao</a>,
+              </span>
+            
+              <span class="author-block">
+                <a href="#" target="_blank">Xiaoyang Guo</a>,
+              </span>
+            
+              <span class="author-block">
+                <a href="#" target="_blank">Xiao-Xiao Long</a><sup>†</sup>
+              </span>
+            
+            </div>
+
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
                     <span class="author-block">Institution Name<br>Conference name and year</span>
                     <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Intern at Horizon Robotics and Nanjing University.</small></span>
+                     <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding author.</small></span>
                   </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
 
                 <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
@@ -307,6 +307,18 @@
                   <span>arXiv</span>
                 </a>
               </span>
+                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <span class="link-block">
+                    <a href="https://github.com/GarlicBa/LiteVGGT" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+
             </div>
           </div>
         </div>
@@ -343,7 +355,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+           3D vision foundation models like Visual Geometry Grounded Transformer (VGGT) have advanced greatly in geometric perception. However it is time-consuming and memory-intensive for long sequences, limiting application to large-scale scenes beyond hundreds of images. To address this, we propose LiteVGGT, achieving up to 10× speedup and substantial memory reduction, enabling efficient processing of 1000-image scenes. We derive two key insights for 3D reconstruction: 1) tokens from local image regions have inherent geometric correlations, leading to high similarity and computational redundancy; 2) token similarity acroses adjacent network layers remains stable, allowing for reusable merge decisions. Guided by these, we design a simple yet efficient strategy, dubbed geometry-aware cached token merging . We analyze each token’s geometric importance, optimizing anchor token selection to better preserve key information for reconstruction. We also cache and reuse merge indices across layers, substantially reducing latency with minimal accuracy impact. This strategy retains VGGT’s core performance, enabling efficient fine-tuning and FP8 quantization for further gains. Extensive experiments validate LiteVGGT’s effectiveness, scalability, and robustness.
           </p>
         </div>
       </div>
