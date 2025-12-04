@@ -395,51 +395,46 @@
 <!-- End Two Demo Section -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
+<section class="hero is-small" style="padding-top: 1rem; padding-bottom: 1rem;">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3 has-text-centered">Pipeline Demonstration</h2>
+      <h2 class="title is-3 has-text-centered">Reconstruction Demonstration Comparisons</h2>
 
-      <!-- Carousel container -->
+      <style>
+        .results-carousel video {
+          width: 80%;
+          height: auto;
+          margin: 0 auto;
+          display: block;
+          border-radius: 8px;
+        }
+      </style>
+
       <div id="results-carousel" class="carousel results-carousel">
-
-        <!-- Video 1 -->
-        <div class="item item-video1">
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+        <div class="item">
+          <video controls muted loop preload="metadata">
             <source src="static/videos/Barn_merged.mp4" type="video/mp4">
           </video>
         </div>
-
-        <!-- Video 2 -->
-        <div class="item item-video2">
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+        <div class="item">
+          <video controls muted loop preload="metadata">
             <source src="static/videos/truck_merged.mp4" type="video/mp4">
           </video>
         </div>
-
-        <!-- Video 3 -->
-        <div class="item item-video3">
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+        <div class="item">
+          <video controls muted loop preload="metadata">
             <source src="static/videos/heads_merged.mp4" type="video/mp4">
           </video>
         </div>
-
-        <!-- ✅ New Video 4 -->
-        <div class="item item-video4">
-          <video poster="" id="video4" controls muted loop height="100%" preload="metadata">
+        <div class="item">
+          <video controls muted loop preload="metadata">
             <source src="static/videos/pupkin_merged.mp4" type="video/mp4">
           </video>
         </div>
-
       </div>
-      <!-- End carousel -->
-
-
     </div>
   </div>
 </section>
-<!-- End video carousel -->
 
 
  <!-- 一些评估结果-->
@@ -451,11 +446,6 @@
       <img src="static/images/eval1.png" 
            alt="LiteVGGT pipeline" 
            style="width:100%; border-radius:8px;">
-
-      <h2 class="subtitle has-text-centered">
-        We augment VGGT by placing a **Geometry-aware Token Merging** module on both sides of its global attention. Within GA-merge, tokens are partitioned by the GA map, grouped and merged to reduce redundancy.
-      </h2>
-
     </div>
   </div>
 </section>
@@ -469,14 +459,13 @@
            alt="LiteVGGT pipeline" 
            style="width:100%; border-radius:8px;">
 
-      <h2 class="subtitle has-text-centered">
-        We augment VGGT by placing a **Geometry-aware Token Merging** module on both sides of its global attention. Within GA-merge, tokens are partitioned by the GA map, grouped and merged to reduce redundancy.
-      </h2>
 
     </div>
   </div>
 </section>
 <!-- End teaser -->
+
+
 
 
 <!--BibTex citation -->
