@@ -192,7 +192,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">LiteVGGT: Boosting Vanilla VGGT via Geometry-aware Cached Token Merging</h1>
+            <h1 class="title is-1 publication-title"><i>LiteVGGT</i> Boosting Vanilla VGGT via Geometry-aware Cached Token Merging</h1>
             <div class="is-size-5 publication-authors">
             
               <span class="author-block">
@@ -289,9 +289,9 @@
 </section>
 
 <!-- Teaser Image -->
-<section class="hero teaser" style="padding: 0.5rem 0;">
+<section class="hero teaser" style="padding-top: 0rem; padding-bottom: 0.5rem; margin-top: -1rem;">
   <div class="container is-max-desktop">
-    <div class="hero-body">
+    <div class="hero-body" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
 
       <!-- Replace video with a single banner image -->
       <img src="static/images/teaser.png" 
@@ -299,7 +299,7 @@
            style="width:110%; border-radius:8px;">
 
       <h2 class="subtitle has-text-centered">
-        For 1000 input images, LiteVGGT achieves a 10× speedup over VGGT while maintaining high accuracy in camera pose and point cloud prediction. Its scalability and robustness make large-scale scene reconstruction more efficient and reliable.
+        For 1000 input images, <em>LiteVGGT</em> achieves a <b>10× speedup</b> over VGGT while maintaining high accuracy in camera pose and point cloud prediction. Its scalability and robustness make large-scale scene reconstruction more efficient and reliable.
       </h2>
 
     </div>
@@ -341,7 +341,7 @@
 
       <h2 class="subtitle has-text-centered">
         We augment VGGT by placing a <b>Geometry-aware Token Merging</b> module on both sides of its global attention.
-        Within <b>GA-merge</b>, tokens are partitioned by the GA map, grouped and merged to reduce redundancy.
+        Within GA-merge, tokens are partitioned by the GA map, grouped and merged to reduce redundancy.
       </h2>
     </div>
   </div>
@@ -436,34 +436,22 @@
   </div>
 </section>
 
-
- <!-- 一些评估结果-->
-<section class="hero teaser" style="padding: 0.1rem 0;">
+<section class="hero teaser" style="padding: 0; margin: 0;">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-
-      <!-- Replace video with a single banner image -->
-      <img src="static/images/eval1.png" 
-           alt="LiteVGGT pipeline" 
-           style="width:100%; border-radius:8px;">
+    <div class="hero-body" style="padding: 0;">
+      <img src="static/images/eval1.png" alt="LiteVGGT pipeline" style="width:100%; border-radius:8px;">
     </div>
   </div>
 </section>
 
-<section class="hero teaser" style="padding: 0.0rem 0;">
+<section class="hero teaser" style="padding: 0; margin-top: -0.5rem;">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-
-      <!-- Replace video with a single banner image -->
-      <img src="static/images/eval2.png" 
-           alt="LiteVGGT pipeline" 
-           style="width:100%; border-radius:8px;">
-
-
+    <div class="hero-body" style="padding: 0;">
+      <img src="static/images/eval2.png" alt="LiteVGGT pipeline" style="width:100%; border-radius:8px;">
     </div>
   </div>
 </section>
-<!-- End teaser -->
+
 
 
 
